@@ -105,23 +105,5 @@
     <footer>
         <p>&copy; 2024 Mijn Weblog. Alle rechten voorbehouden.</p>
     </footer>
-
-    <script>
-        function toggleArticles() {
-            const hiddenArticles = document.querySelectorAll('#dagboek article.hidden');
-            const seeMoreButton = document.querySelector('.see-more');
-            
-            hiddenArticles.forEach(article => {
-                article.classList.toggle('hidden');
-            });
-
-            // Verander de tekst van de knop afhankelijk van de huidige staat
-            if (seeMoreButton.innerText === 'Meer Artikelen') {
-                seeMoreButton.innerText = 'Minder Artikelen';
-            } else {
-                seeMoreButton.innerText = 'Meer Artikelen';
-            }
-        }
-    </script>
 </body>
 </html>
