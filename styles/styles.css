@@ -1,4 +1,4 @@
-
+/* Basis stijlen */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #4caf50;
+    background: #4caf50; /* Groen */
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -17,9 +17,9 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex; 
-    justify-content: center; 
-    flex-wrap: wrap; 
+    display: flex; /* Flexbox voor navigatie */
+    justify-content: center; /* Centraal uitlijnen */
+    flex-wrap: wrap; /* Schaling voor kleinere schermen */
 }
 
 nav ul li {
@@ -33,49 +33,50 @@ nav a {
 
 main {
     padding: 20px;
-    max-width: 1200px; 
-    margin: auto; 
+    max-width: 1200px; /* Max breedte voor de hoofdinhoud */
+    margin: auto; /* Centreer de hoofdinhoud */
 }
 
 .grid-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsieve grid voor artikelen */
+    gap: 20px; /* Ruimte tussen grid-items */
 }
 
 section {
-    background: #ffffff; 
+    background: #ffffff; /* Witte secties */
     margin: 20px 0;
     padding: 20px;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; /* Verhoogde afronding van hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Zachte schaduw */
 }
 
 h2 {
-    color: #4caf50;
+    color: #4caf50; /* Groen voor koppen */
 }
 
 h3 {
-    color: #333; 
+    color: #333; /* Donkerdere kleur voor subkoppen */
+}
 
 article {
     padding: 15px;
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    background: #f9f9f9; 
-    transition: background 0.3s; 
+    border: 1px solid #ccc; /* Rand voor artikelen */
+    border-radius: 5px; /* Afgeronde hoeken voor artikelen */
+    background: #f9f9f9; /* Achtergrondkleur voor artikelen */
+    transition: background 0.3s; /* Gladde overgang voor achtergrondkleur */
 }
 
 article:hover {
-    background: #e8f5e9; 
+    background: #e8f5e9; /* Lichte achtergrond bij hover */
 }
 
 .hidden {
-    display: none; 
+    display: none; /* Verborgen artikelen verbergen */
+}
 
 .see-more {
-    background: #4caf50; 
-    color: white; 
-    border: none; 
-    padding:
-}
+    background: #4caf50; /* Groene achtergrond */
+    color: white; /* Witte tekst */
+    border: none; /* Geen rand */
+    padding
