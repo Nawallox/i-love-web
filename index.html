@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn Weblog</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="scripts/script.js">
-
 </head>
 <body>
     <header>
@@ -107,5 +105,16 @@
     <footer>
         <p>&copy; 2024 Mijn Weblog. Alle rechten voorbehouden.</p>
     </footer>
+
+    <script>
+        function toggleArticles() {
+            const hiddenArticles = document.querySelectorAll('#dagboek article.hidden');
+            hiddenArticles.forEach(article => {
+                article.classList.toggle('hidden');
+            });
+            const seeMoreButton = document.querySelector('.see-more');
+            seeMoreButton.innerText = seeMoreButton.innerText === 'Meer Artikelen' ? 'Minder Artikelen' : 'Meer Artikelen';
+        }
+    </script>
 </body>
 </html>
