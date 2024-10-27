@@ -17,10 +17,12 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Flexbox voor navigatie */
+    justify-content: center; /* Centraal uitlijnen */
+    flex-wrap: wrap; /* Schaling voor kleinere schermen */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -31,14 +33,22 @@ nav a {
 
 main {
     padding: 20px;
+    max-width: 1200px; /* Max breedte voor de hoofdinhoud */
+    margin: auto; /* Centreer de hoofdinhoud */
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsieve grid voor artikelen */
+    gap: 20px; /* Ruimte tussen grid-items */
 }
 
 section {
     background: #ffffff; /* Witte secties */
     margin: 20px 0;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Verhoogde afronding van hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Zachte schaduw */
 }
 
 h2 {
@@ -46,18 +56,19 @@ h2 {
 }
 
 h3 {
-    color: #555;
+    color: #333; /* Donkerdere kleur voor subkoppen */
 }
 
 article {
-    display: inline-block; /* Toestaan dat artikelen naast elkaar staan */
-    margin-right: 20px; /* Ruimte tussen artikelen */
-    width: 250px; /* Vaste breedte voor elk artikel */
-    vertical-align: top; /* Artikelen bovenaan uitlijnen */
-    border: 1px solid #ccc; /* Rand voor elk artikel */
-    border-radius: 5px; /* Afgeronde hoeken */
-    padding: 10px; /* Padding binnen elk artikel */
-    background: #f9f9f9; /* Achtergrondkleur voor elk artikel */
+    padding: 15px;
+    border: 1px solid #ccc; /* Rand voor artikelen */
+    border-radius: 5px; /* Afgeronde hoeken voor artikelen */
+    background: #f9f9f9; /* Achtergrondkleur voor artikelen */
+    transition: background 0.3s; /* Gladde overgang voor achtergrondkleur */
+}
+
+article:hover {
+    background: #e8f5e9; /* Lichte achtergrond bij hover */
 }
 
 .hidden {
@@ -65,31 +76,7 @@ article {
 }
 
 .see-more {
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-    margin-top: 20px;
-    display: block;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #4caf50; /* Groen */
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive styling */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Stapel navigatie-items op kleinere schermen */
-        margin: 10px 0;
-    }
-    article {
-        width: 100%; /* Maak artikelen volwaardige breedte op mobiele schermen */
-        margin-right: 0; /* Geen ruimte tussen artikelen op mobiele schermen */
-    }
-}
+    background: #4caf50; /* Groene achtergrond */
+    color: white; /* Witte tekst */
+    border: none; /* Geen rand */
+    padding
