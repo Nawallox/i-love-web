@@ -35,4 +35,53 @@
                 <p>Vandaag heb ik mijn HTML-code getest via de W3C HTML Validator...</p>
             </article>
             <article class="hidden">
-            
+                <h3>Datum: 24 Oktober 2024</h3>
+                <p>Vandaag heb ik een code/design review uitgevoerd...</p>
+            </article>
+            <article class="hidden">
+                <h3>Datum: 23 Oktober 2024</h3>
+                <p>Vandaag heb ik me verdiept in layout modes...</p>
+            </article>
+            <article class="hidden">
+                <h3>Datum: 22 Oktober 2024</h3>
+                <p>Vandaag heb ik de voortgang van mijn project bekeken...</p>
+            </article>
+            <button class="see-more" onclick="toggleArticles()">See More</button>
+        </section>
+
+        <section id="projecten">
+            <h2>Mijn Projecten</h2>
+            <p>Sprint 1: Kennismaken, samenwerken en hoe je interface en vormgevingsprincipes kan toepassen voor een responsive design.</p>
+            <p>Sprint 2: Opdracht voor een opdrachtgever en het bespreken van het resultaat tijdens de Sprint Review.</p>
+            <p>Sprint 3: Toegankelijkheid, testen en de testresultaten gebruiken voor het verbeteren van een ontwerp.</p>
+        </section>
+
+        <section id="leerervaringen">
+            <h2>Mijn Leerervaringen</h2>
+            <p><strong>Sprint 1:</strong> Kennismaken, Samenwerken en Responsief Design. In deze eerste sprint heb ik kennisgemaakt met mijn team en de opdracht. We hebben samengewerkt aan de fundamenten van het project. Ik heb geleerd hoe belangrijk goede communicatie is en hoe we interface- en vormgevingsprincipes kunnen toepassen om een responsief design te creëren.</p>
+            <p><strong>Sprint 2:</strong> Opdracht voor een Opdrachtgever en Sprint Review. Tijdens deze sprint werkte ik aan een specifieke opdracht van een opdrachtgever. Dit gaf me de kans om mijn vaardigheden in het samenwerken aan een project verder te ontwikkelen. We hebben het resultaat gepresenteerd tijdens de Sprint Review, waar ik leerde hoe feedback effectief kan worden gebruikt om ons werk te verbeteren.</p>
+            <p><strong>Sprint 3:</strong> Toegankelijkheid, Testen en Verbeteringen. In de derde sprint lag de focus op toegankelijkheid en het testen van ons ontwerp. Ik heb geleerd hoe cruciaal het is om testresultaten te gebruiken om een ontwerp te verbeteren. Deze sprint heeft me bewust gemaakt van de verschillende manieren om de toegankelijkheid van een website te waarborgen, zodat deze bruikbaar is voor iedereen, ongeacht hun vaardigheden.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Neem contact met me op via <a href="mailto:n.arkobi@outlook.com">n.arkobi@outlook.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mijn Weblog. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        function toggleArticles() {
+            const hiddenArticles = document.querySelectorAll('#dagboek article.hidden');
+            hiddenArticles.forEach(article => {
+                article.classList.toggle('hidden');
+            });
+            const seeMoreButton = document.querySelector('.see-more');
+            seeMoreButton.innerText = seeMoreButton.innerText === 'See More' ? 'See Less' : 'See More';
+        }
+    </script>
+</body>
+</html>
