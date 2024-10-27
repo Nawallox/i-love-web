@@ -1,32 +1,16 @@
+/* Basis stijlen */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
-#dagboek {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* To enable horizontal scrolling */
-    white-space: nowrap; /* To prevent line breaks */
-}
-.article-container {
-    display: inline-block; /* Allows the articles to be side by side */
-    margin-right: 20px; /* Space between articles */
-    width: 250px; /* Fixed width for each article */
-    vertical-align: top; /* Aligns articles at the top */
-    border: 1px solid #ccc; /* Border for each article */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding inside each article */
-    background: #f9f9f9; /* Background color for each article */
-}
+
 header {
     background: #4caf50; /* Groen */
     color: #ffffff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
@@ -64,19 +48,28 @@ h2 {
 h3 {
     color: #555;
 }
-.hidden {
-    display: none;
+
+article {
+    display: inline-block; /* Toestaan dat artikelen naast elkaar staan */
+    margin-right: 20px; /* Ruimte tussen artikelen */
+    width: 250px; /* Vaste breedte voor elk artikel */
+    vertical-align: top; /* Artikelen bovenaan uitlijnen */
+    border: 1px solid #ccc; /* Rand voor elk artikel */
+    border-radius: 5px; /* Afgeronde hoeken */
+    padding: 10px; /* Padding binnen elk artikel */
+    background: #f9f9f9; /* Achtergrondkleur voor elk artikel */
 }
+
+.hidden {
+    display: none; /* Verborgen artikelen verbergen */
+}
+
 .see-more {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
     margin-top: 20px;
     display: block;
-}
-
-article {
-    margin-bottom: 20px;
 }
 
 footer {
@@ -94,5 +87,9 @@ footer {
     nav ul li {
         display: block; /* Stapel navigatie-items op kleinere schermen */
         margin: 10px 0;
+    }
+    article {
+        width: 100%; /* Maak artikelen volwaardige breedte op mobiele schermen */
+        margin-right: 0; /* Geen ruimte tussen artikelen op mobiele schermen */
     }
 }
